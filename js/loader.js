@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let progress = 0;
   const duration = 0;
   const interval = 20;
-  const increment = 100 / (duration / interval);
+  const increment = 10 / (duration / interval);
   
   // Animate progress bar
   const progressInterval = setInterval(() => {
