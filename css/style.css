@@ -8,31 +8,33 @@
 }
 
 :root {
-    /* Colors */
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #ec4899;
-    --bg-dark: #0a0a0f;
-    --bg-card: rgba(15, 15, 25, 0.6);
-    --text-primary: #ffffff;
-    --text-secondary: rgba(255, 255, 255, 0.7);
-    --text-muted: rgba(255, 255, 255, 0.5);
-    
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-    --gradient-card: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-    
-    /* Shadows & Glows */
-    --glow-primary: 0 0 40px rgba(99, 102, 241, 0.6);
-    --glow-secondary: 0 0 40px rgba(139, 92, 246, 0.6);
-    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
-    
-    /* Spacing */
-    --section-padding: 100px 5%;
-    
-    /* Transitions */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Colors */
+  --primary-color: #60A5FA; /* Blue 400 - Trust & Tech */
+  --secondary-color: #3B82F6; /* Blue 500 - Professional */
+  --accent-color: #93C5FD; /* Blue 300 - Subtle highlight */
+  --bg-dark: #0A0E17; /* Deep Navy - Almost black */
+  --bg-card: rgba(17, 24, 39, 0.8); /* Gray 900 */
+  --text-primary: #F9FAFB;
+  --text-secondary: rgba(249, 250, 251, 0.85);
+  --text-muted: rgba(249, 250, 251, 0.5);
+  
+  /* Gradients - Clean & Simple */
+  --gradient-primary: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+  --gradient-card: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  
+  /* Shadows & Glows - Professional */
+  --glow-primary: 0 0 40px rgba(59, 130, 246, 0.4);
+  --glow-secondary: 0 0 40px rgba(147, 197, 253, 0.3);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+
+
+
+
 
 html {
     scroll-behavior: smooth;
@@ -201,12 +203,32 @@ body {
 /* ============================
    NAVIGATION
    ============================ */
+
+   .nav-logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.nav-logo .logo-icon {
+  height: 40px;
+  width: 150px;
+  object-fit: contain;
+}
+
+
+
+
+
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5rem 5%;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -672,6 +694,7 @@ body {
     color: var(--text-secondary);
     margin-bottom: 2rem;
     line-height: 2;
+    text-align: justify;
 }
 
 .skills-grid {
