@@ -523,6 +523,7 @@ body {
     left: 0;
     z-index: 0;
     pointer-events: none;
+    padding-bottom: 0px;
 }
 
 .hero-orb-1 {
@@ -553,7 +554,8 @@ body {
    ABOUT SECTION
    ============================ */
 .about-section {
-    padding-bottom: 0px;
+    padding-bottom: 80px;
+    padding-top: 0px;
     position: relative;
     min-height: 100vh;  /* Ensure consistent height */
     perspective: 1100px;
@@ -649,7 +651,7 @@ body {
 }
 
 .section-title {
-    padding-top: 120px;
+    padding-top: 10px;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0rem;
