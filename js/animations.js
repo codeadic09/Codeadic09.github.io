@@ -140,13 +140,13 @@ function initAnimations() {
     {
       scrollTrigger: {
         trigger: '.about-section',
-        start: 'top 75%',
+        start: 'top 80%',
         end: 'bottom 20%',
         toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.4,
       delay: 0.2,
       ease: 'power2.out'
     }
@@ -189,7 +189,7 @@ function initAnimations() {
       },
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.2,
       delay: 0.2,
       ease: 'power2.out'
     }
@@ -209,7 +209,7 @@ function initAnimations() {
       },
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.2,
       stagger: 0.2,
       ease: 'power2.out'
     }
@@ -252,7 +252,7 @@ function initAnimations() {
       },
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.2,
       delay: 0.2,
       ease: 'power2.out'
     }
@@ -272,7 +272,7 @@ function initAnimations() {
       },
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.2,
       stagger: 0.2,
       ease: 'power2.out'
     }
@@ -315,7 +315,7 @@ function initAnimations() {
       },
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.2,
       delay: 0.2,
       ease: 'power2.out'
     }
