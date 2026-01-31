@@ -222,7 +222,7 @@ body {
 
 
 
-/* ========== MOBILE MENU (DROPDOWN POPUP) ========== */
+/* ========== MOBILE MENU (DROPDOWN POPUP) - FIXED ========== */
 .mobile-menu {
     position: fixed;
     top: 70px;
@@ -243,12 +243,16 @@ body {
     opacity: 0;
     transform: translateY(-20px) scale(0.95);
     transform-origin: top right;
+    pointer-events: none; /* FIX: Prevents clicking when closed */
+    visibility: hidden; /* FIX: Completely hides when closed */
 }
 
 .mobile-menu.active {
     max-height: 400px;
     opacity: 1;
     transform: translateY(0) scale(1);
+    pointer-events: auto; /* FIX: Allows clicking when open */
+    visibility: visible; /* FIX: Shows when open */
 }
 
 .mobile-nav-links {
@@ -297,11 +301,11 @@ body {
     transform: scaleY(1);
 }
 
-/* Mobile menu icons */
 .mobile-link i {
     font-size: 1.2rem;
     color: var(--primary-color);
 }
+
 
 /* Overlay for mobile menu */
 .mobile-overlay {

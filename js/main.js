@@ -22,7 +22,7 @@ function initPreloader() {
     });
 }
 
-// ========== NAVIGATION ========== //
+// ========== NAVIGATION (FIXED) ========== //
 function initNavigation() {
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -32,7 +32,8 @@ function initNavigation() {
     
     // Hamburger Menu Toggle
     if (hamburger && mobileMenu && mobileOverlay) {
-        hamburger.addEventListener('click', () => {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent event bubbling
             hamburger.classList.toggle('active');
             mobileMenu.classList.toggle('active');
             mobileOverlay.classList.toggle('active');
@@ -49,12 +50,27 @@ function initNavigation() {
         
         // Close mobile menu when clicking a link
         document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
+                // Only close if menu is active
+                if (mobileMenu.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    mobileOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (mobileMenu.classList.contains('active') && 
+                !mobileMenu.contains(e.target) && 
+                !hamburger.contains(e.target)) {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
                 mobileOverlay.classList.remove('active');
                 document.body.style.overflow = '';
-            });
+            }
         });
     }
     
@@ -89,6 +105,7 @@ function initNavigation() {
         });
     });
 }
+
 
 
 // ========== SMOOTH SCROLL ========== //
