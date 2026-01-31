@@ -1,661 +1,353 @@
-/* ============================
-   TABLET (Max-width: 1024px)
-   ============================ */
+/* ==============================================
+   RESPONSIVE DESIGN - COMPLETE MOBILE OPTIMIZATION
+   ============================================== */
 
-   
-
+/* ========== TABLET (Max-width: 1024px) ========== */
 @media (max-width: 1024px) {
-  :root {
-    --section-padding: 80px 5%;
-  }
-  
-  .hero-title {
-    font-size: 3rem;
-  }
-  
-  .spline-container {
-    width: 50%;
-  }
-  
-  .about-grid {
-    gap: 3rem;
-  }
-  
-  .profile-image-container {
-    width: 300px;
-    height: 300px;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-  }
-  
-  .projects-grid {
-    grid-template-columns: repeat(2, 350px);
-  }
-}
-
-/* ============================
-   MOBILE (Max-width: 768px)
-   ============================ */
-
-@media (max-width: 768px) {
-  :root {
-    --section-padding: 60px 5%;
-  }
-
-
-  /* ============================
-   MOBILE (Max-width: 768px)
-   ============================ */
-
-@media (max-width: 768px) {
-  
-  /* ... your existing mobile styles ... */
-  
-  /* ===================================
-     📱 PRELOADER - CENTERED ON MOBILE
-     =================================== */
-  
-  .preloader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-  }
-  
-  /* Remove desktop offsets - center everything */
-  .preloader-spline {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: none !important; /* Hide Spline on mobile */
-  }
-  
-  /* Center preloader content */
-  .preloader-content {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    transform: none !important;
-    text-align: center;
-    z-index: 10;
-    padding: 0 1rem;
-  }
-  
-  /* Scale down logo for mobile */
-  .preloader-logo {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* Adjust progress bar size */
-  .progress-container {
-    width: 80%;
-    max-width: 300px;
-    margin: 0 auto 1rem;
-  }
-  
-  /* Progress text size */
-  .progress-text {
-    font-size: 2rem;
-  }
-  
-  /* Center glow orbs */
-  .glow-orb.orb-1,
-  .glow-orb.orb-2 {
-    position: absolute;
-  }
-  
-  .glow-orb.orb-1 {
-    width: 200px;
-    height: 200px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .glow-orb.orb-2 {
-    width: 250px;
-    height: 250px;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-/* ============================
-   SMALL MOBILE (Max-width: 480px)
-   ============================ */
-
-@media (max-width: 480px) {
-  
-  /* Even smaller logo */
-  .preloader-logo {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Smaller progress bar */
-  .progress-container {
-    width: 250px;
-    height: 3px;
-  }
-  
-  /* Smaller progress text */
-  .progress-text {
-    font-size: 1.5rem;
-  }
-  
-  /* Reduce glow orb sizes */
-  .glow-orb.orb-1 {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .glow-orb.orb-2 {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-  
-  /* ===================================
-     🚫 REMOVE ALL SPLINE ON MOBILE
-     =================================== */
-
-
-     
-  
-  /* Hide preloader Spline */
-  .preloader-spline {
-    display: none !important;
-  }
-  
-  /* Hide hero Spline */
-  .hero-section .spline-container {
-    display: none !important;
-  }
-  
-  /* Hide About section Spline */
-  .about-spline-background {
-    display: none !important;
-  }
-  
-  /* Hide any other Spline containers */
-  .spline-container,
-  spline-viewer {
-    display: none !important;
-  }
-  
-  /* ===================================
-     📱 MOBILE OPTIMIZATIONS
-     =================================== */
-  
-  /* Navigation */
-  .nav-links {
-    display: none;
-  }
-  
-  .hamburger {
-    display: flex;
-  }
-  
-  /* ============================
-   MOBILE (Max-width: 768px)
-   ============================ */
-
-@media (max-width: 768px) {
-  
-  /* ... keep your existing preloader and navigation styles ... */
-  
-  /* Hero Section */
-  .hero-section {
-    height: auto;
-    min-height: 100vh;
-    padding: 100px 5% 60px;
-    z-index: 1;
-    background: linear-gradient(
-      135deg,
-      rgba(99, 102, 241, 0.15) 0%,
-      rgba(139, 92, 246, 0.15) 50%,
-      rgba(236, 72, 153, 0.15) 100%
-    );
-  }
-  
-  .hero-content {
-    text-align: center;
-    padding: 2rem 1.5rem;
-    background: rgba(30, 30, 93, 0.7);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    max-width: 100%;
-    z-index: 10;
-  }
-  
-  .hero-title {
-    font-size: 1.5rem !important;
-    line-height: 1.9!important;
-    display: inline-block !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 0.6rem !important;
-    white-space: normal !important; /* Allow wrapping */
-    z-index: 10;
-  }
-  
-  /* CRITICAL FIX: Role Container */
-  .role-container {
-    display: block !important;
-    position: relative !important;
-    right: 0 !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 1.7em !important; /* Taller for wrapped text */
-    overflow: hidden !important;
-    margin-right: 280px !important;
-    z-index: 10;
-  }
-  
-  /* CRITICAL FIX: Role Text - Smaller Font, Wrapping Enabled */
-  .role-text {
-    position: absolute !important;
-    /* right: 15px !important; */
-    top: 0 !important;
-    width: 100% !important;
-    font-size: 0.75em !important; /* 75% of hero-title size */
-    font-weight: 600 !important;
-    line-height: 1.8 !important;
-    text-align: center !important;
-    /* white-space: normal; */
-    word-wrap: normal;
-    overflow-wrap: nowrap;
-    padding: 0 0rem !important;
-    box-sizing: border-box !important;
-    /* text-overflow: ellipsis !important; Add ... */
-    overflow: hidden !important;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem !important;
-    margin: 0rem 0 !important;
-    line-height: 1.5 !important;
-    z-index: 10;
-  }
-  
-  .cta-buttons {
-    flex-direction: column !important;
-    gap: 1rem !important;
-    margin-top: 1.5rem !important;
-  }
-  
-  .cta-buttons .btn {
-    width: 100% !important;
-  }
-}
-
-/* ============================
-   SMALL MOBILE (Max-width: 480px)
-   ============================ */
-
-@media (max-width: 480px) {
-  
-  .hero-title {
-    font-size: 2rem !important;
-  }
-  
-  /* Even smaller role text for small screens */
-  .role-container {
-    height: 1.5em !important;
-    line-height: normal; /* More space for wrapped text */
-  }
-  
-  .role-text {
-    font-size: 0.7em !important; /* 70% of hero-title */
-    line-height: 1.9 !important;
-  }
-  
-  .hero-content {
-    padding: 1.5rem 1rem !important;
-  }
-}
-
-/* ============================
-   VERY SMALL MOBILE (Max-width: 360px)
-   ============================ */
-
-@media (max-width: 360px) {
-  
-  .hero-title {
-    font-size: 1.75rem !important;
-  }
-  
-  .role-text {
-    font-size: 0.65em !important; /* Even smaller */
-    line-height: 1.9 !important;
-  }
-}
-
-  
-  /* About Section */
-  .about-section {
-    /* Add gradient background since Spline is removed */
-    background: linear-gradient(
-      135deg,
-      rgba(99, 102, 241, 0.05) 0%,
-      rgba(139, 92, 246, 0.05) 100%
-    );
-
-  }
-
-   
-  
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .about-text {
-    font-size: 1rem;
+    :root {
+        --section-padding: 80px 0;
+    }
     
-  }
-  
-  .profile-image-container {
-    top: 50px;
-    width: 300px;
-    height: 300px;
-    margin: 0px auto;
-  }
-  
-  .skills-grid {
-    grid-template-columns: repeat(3, 2fr);
-    gap: 1rem;
-  }
-
-  .skill-item {
-    padding: 1rem;
-  }
-  
-  .skill-card {
-    padding: 1rem;
-  }
-  
-  /* Projects Section */
-  .projects-scroll-container {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch; /* Smooth iOS scrolling */
-  }
-  
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, fr));
-    gap: 1.5rem;
-    padding: 1rem 0;
-  }
-  
-  .project-card {
-    width: 100%;
-    min-width: 300px;
-  }
-  
-  /* Contact Section */
-  .contact-content {
-    padding: 0 1rem;
-  }
-  
-  .contact-form {
-    max-width: 100%;
-  }
-  
-  .social-links {
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.2rem;
-  }
-  
-  /* Footer */
-  .footer-nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-image {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image-wrapper {
+        max-width: 300px;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-title-wrapper {
+        justify-content: center;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
 
-/* ============================
-   SMALL MOBILE (Max-width: 480px)
-   ============================ */
+/* ========== MOBILE (Max-width: 768px) ========== */
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+    
+    /* Navigation */
+    .nav-links {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .navbar {
+        padding: 1rem 5%;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding: 100px 5% 60px;
+    }
+    
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-greeting {
+        font-size: 1rem;
+    }
+    
+    .hero-title-wrapper {
+        flex-direction: column;
+        align-items: center;
+        min-height: 4rem;
+    }
+    
+    .role-container {
+        min-width: 280px;
+        height: 2rem;
+        text-align: center;
+    }
+    
+    .role-text {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    .role-prefix {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .image-wrapper {
+        max-width: 250px;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    /* Experience */
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .experience-item {
+        padding: 1.5rem;
+    }
+    
+    /* Contact */
+    .contact-wrapper {
+        gap: 2rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Scroll Indicator */
+    .scroll-indicator {
+        bottom: 20px;
+    }
+}
 
+/* ========== SMALL MOBILE (Max-width: 480px) ========== */
 @media (max-width: 480px) {
-  
-  /* Preloader adjustments */
-  .preloader-logo {
-    font-size: 3rem;
-  }
-  
-  .progress-container {
-    width: 250px;
-  }
-  
-  /* Hero Section */
-  .hero-title {
-    font-size: 2rem;
-    margin: 0%;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  
-  .hero-content {
-    padding: 1.5rem 1rem;
-  }
-  
-  /* Section titles */
-  .section-title {
-    font-size: 2rem;
-    padding-top: 80px;
-  }
-  .section-title2 {
-    font-size: 2rem;
-    padding-top: 0px;
-  }
-  
-  /* Skills */
-  .skills-grid {
-    grid-template-columns: repeat(3, 2fr);
-  }
-  
-  /* Projects */
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .project-card {
-    width: 100%;
-    min-width: 280px;
-  }
-  
-  /* Footer */
-  .footer-nav {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  /* Ensure all Spline is hidden on small mobile too */
-  .preloader-spline,
-  .spline-container,
-  .about-spline-background,
-  spline-viewer {
-    display: none !important;
-  }
+    html {
+        font-size: 14px;
+    }
+    
+    .hero-name {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 90px 5% 50px;
+    }
+    
+    .navbar {
+        padding: 0.8rem 5%;
+    }
+    
+    .mobile-menu {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .skills-heading,
+    .category-title {
+        font-size: 1.5rem;
+    }
+    
+    .skill-card,
+    .experience-item {
+        padding: 1.25rem;
+    }
+    
+    .contact-form {
+        padding: 1.25rem;
+    }
+    
+    .image-wrapper {
+        max-width: 200px;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .role-container {
+        min-width: 220px;
+    }
+    
+    .role-text {
+        font-size: 0.9rem;
+    }
 }
 
-/* ============================
-   LANDSCAPE MOBILE
-   ============================ */
-
+/* ========== LANDSCAPE MODE ========== */
 @media (max-width: 768px) and (orientation: landscape) {
-  .hero-section {
-    min-height: auto;
-    padding: 80px 5% 40px;
-  }
-  
-  .hero-content {
-    padding: 1.5rem;
-  }
-  
-  .hero-title {
-    font-size: 2rem;
-  }
+    .hero-section {
+        min-height: auto;
+        padding: 100px 5% 50px;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1.5fr 1fr;
+    }
+    
+    .hero-image {
+        order: 2;
+    }
+    
+    .image-wrapper {
+        max-width: 250px;
+    }
+}
+
+/* ========== SMOOTH ANIMATIONS ========== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 
-/* ============================
-   MOBILE - EXPERIENCE SECTION
-   ============================ */
-
+/* ========== MOBILE MENU RESPONSIVE ========== */
 @media (max-width: 768px) {
-  
-  .experience-section {
-    padding: 60px 5%;
-  }
-  
-  .experience-timeline {
-    margin-top: 2rem;
-  }
-  
-  .experience-timeline::before {
-    left: 15px;
-  }
-  
-  .experience-item {
-    padding-left: 50px;
-    margin-bottom: 2rem;
-  }
-  
-  .experience-icon {
-    width: 40px;
-    height: 40px;
-    left: 0;
-  }
-  
-  .experience-icon i {
-    font-size: 1.3rem;
-  }
-  
-  .experience-content {
-    padding: 1.5rem;
-  }
-  
-  .experience-header {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .experience-title {
-    font-size: 1.2rem;
-  }
-  
-  .experience-company {
-    font-size: 0.9rem;
-  }
-  
-  .experience-date {
-    align-self: flex-start;
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
-  }
-  
-  .experience-description li {
-    font-size: 0.9rem;
-    margin-bottom: 0.6rem;
-    padding-left: 1.2rem;
-  }
-  
-  .experience-description li::before {
-    font-size: 1rem;
-  }
-  
-  .experience-tags .tag {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-  }
+    .nav-links {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .mobile-menu {
+        width: 280px;
+        right: 20px;
+    }
 }
 
 @media (max-width: 480px) {
-  
-  .experience-content {
-    padding: 1.25rem;
-  }
-  
-  .experience-title {
-    font-size: 1.1rem;
-  }
-  
-  .experience-description li {
-    font-size: 0.85rem;
-  }
-  
-  .experience-tags {
-    gap: 0.4rem;
-  }
-  
-  .experience-tags .tag {
-    font-size: 0.75rem;
-    padding: 0.35rem 0.7rem;
-  }
+    .mobile-menu {
+        width: calc(100% - 40px);
+        right: 20px;
+        left: 20px;
+    }
 }
 
+/* Landscape mode */
+@media (max-width: 768px) and (orientation: landscape) {
+    .mobile-menu {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    .mobile-menu.active {
+        max-height: 300px;
+    }
+}
 
+/* Custom scrollbar for mobile menu */
+.mobile-menu {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgba(255, 255, 255, 0.1);
+}
 
+.mobile-menu::-webkit-scrollbar {
+    width: 4px;
+}
 
+.mobile-menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
 
+.mobile-menu::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
 
+.mobile-menu::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
 
+/* Custom scrollbar for mobile menu */
+.mobile-menu {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgba(255, 255, 255, 0.1);
+}
 
-/* ============================
-   DISABLE ANIMATIONS ON MOBILE
-   ============================ */
+.mobile-menu::-webkit-scrollbar {
+    width: 4px;
+}
 
-@media (max-width: 768px) {
-  
-  /* Make all sections visible immediately */
-  .hero-content,
-  .about-section,
-  .projects-section,
-  .experience-section,
-  .contact-section,
-  .section-title,
-  .project-card,
-  .experience-item,
-  .experience-content,
-  .experience-icon {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-  }
-  
-  /* Disable ScrollTrigger */
-  [data-scroll],
-  [data-scroll-section] {
-    transform: none !important;
-  }
-  
-  
+.mobile-menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
 }

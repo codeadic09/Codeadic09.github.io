@@ -3,595 +3,477 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code - ML Engineer</title>
-    <link rel="icon" type="image/png" href="assets\images\logo.png">
-
-      <!-- Google Analytics 4 -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGK832ML0D"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QGK832ML0D'); // Replace with your ID
-      </script>
+    <title>Code</title>
+    <meta name="description" content="Portfolio of Cybersecurity Specialist and Machine Learning Engineer showcasing projects in ML, Python, and security.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png  ">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
-    <!-- Locomotive Scroll CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <script src="https://unpkg.com/phosphor-icons@1.4.2/src/index.js"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-
-    <script src="https://unpkg.com/split-type"></script>
 </head>
 <body>
-
-
-    
-
-
     
     <!-- Preloader -->
     <div class="preloader">
-
-
-        <!-- <div class="preloader-spline">
-        <iframe src='https://my.spline.design/slowpulseloadingscreen-NbhUM6nEdECJ36QT124fVFCO/' frameborder='0' width='100%' height='100%'></iframe>
-    </div> -->
-
-
-        <!-- <div class="preloader-content">
-            <h1 class="preloader-logo">Loading</h1>
-            <div class="progress-container">
-                <div class="progress-bar"></div>
-            </div>
-            <p class="progress-text">0%</p>
-        </div> -->
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <p class="loading-text">Welcome</p>
+        </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-logo">
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-logo">
         <a href="#home">
-          <img src="assets/images/header.png" alt="" class="logo-icon">
-          <span></span>
+            <img src="assets/images/header.png" alt="Logo" class="logo-img">
+            
         </a>
-      </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="hamburger">
     </div>
-  </div>
-        
-    </nav>
+    <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 
-    
+<!-- Mobile Menu Overlay -->
+<div class="mobile-overlay"></div>
 
-    <!-- Mobile Menu -->
-    <!-- <div class="mobile-menu">
-        <ul class="mobile-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div> -->
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li>
+            <a href="#home" class="mobile-link active">
+                <i class="ph ph-house"></i>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#about" class="mobile-link">
+                <i class="ph ph-user"></i>
+                About
+            </a>
+        </li>
+        <li>
+            <a href="#projects" class="mobile-link">
+                <i class="ph ph-briefcase"></i>
+                Projects
+            </a>
+        </li>
+        <li>
+            <a href="#experience" class="mobile-link">
+                <i class="ph ph-certificate"></i>
+                Experience
+            </a>
+        </li>
+        <li>
+            <a href="#contact" class="mobile-link">
+                <i class="ph ph-chat-circle-dots"></i>
+                Contact
+            </a>
+        </li>
+    </ul>
+</div>
 
-    <!-- Main Content -->
-    <div data-scroll-container>
-        
-        <!-- Hero Section -->
-        <section id="home" class="hero-section" data-scroll-section>
-            <!-- <div class="spline-container">
-               <iframe src='https://my.spline.design/nexbotrobotcharacterconcept-9Nc9BUNxOqeUeMgxFQGFOYTR/?logo=0'
-                frameborder='0' width='100%' height='100%'></iframe>
-            </div> -->
-            
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Greetings! I'm <span class="gradient-text">Om</span>
-                    <span class="role-container">
-                        <span class="role-text" data-gradient="2">Machine Learning</span>
-                        <span class="role-text" data-gradient="3">Cyber Security Analyst</span>
-                        <span class="role-text" data-gradient="1">Python Developer</span>
-                    </span>
-                </h1>
 
 
-                <p class="hero-subtitle">Crafting immersive digital experiences with code</p>
-                <a class="cta-button scroll-down-button" href="#about">
-                    <span>Explore More </span>
-                    <i class="ph ph-arrow-down"></i>
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="hero-container">
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I am</p>
+            <h1 class="hero-name">
+                <span class="name-text">Om Chaudhari</span>
+            </h1>
+            <div class="hero-title-wrapper">
+                <span class="role-prefix">I'm a</span>
+                <div class="role-container">
+                    <span class="role-text" data-gradient="1">Cybersecurity Specialist</span>
+                    <span class="role-text" data-gradient="2">ML Engineer</span>
+                    <span class="role-text" data-gradient="3">Python Developer</span>
+                </div>
+            </div>
+            <p class="hero-description">
+                Building secure systems and intelligent solutions through code. 
+                Passionate about cybersecurity, machine learning, and creating impactful technology.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                                <a href="assets/resume.pdf" class="btn btn-resume" target="_blank" download>
+                    <i class="ph ph-file-text"></i>
+                    View Resume
                 </a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
-            
-            <div class="floating-orbs">
-                <div class="glow-orb hero-orb-1"></div>
-                <div class="glow-orb hero-orb-2"></div>
-                <div class="glow-orb hero-orb-3"></div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="assets/images/profile-img.jpg" alt="Your Name">
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section" data-scroll-section>
-            <!-- <div class="about-spline-background">
-                <iframe src='https://my.spline.design/squarechipsfallinginplace-2oycyDsRQv12Mh5gyB1H4JXj/' frameborder='0' width='100%' height='100%' loding="lazy"></iframe>
-            </div> -->
-
-
-            
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-left">
-                        <div class="profile-image-container">
-                            <img src="assets/images/profile-img.jpg" alt="Om" class="profile-image">
-                            <div class="profile-glow"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-right">
-                        <h2 class="section-title">About Me: </h2>
-                        <p class="about-text">
-                          👋Hi there! I’m a tech enthusiast passionate about Machine Learning 🤖 and Cyber Security.<br>
-                            I’m currently learning and strengthening my skills from intermediate to advanced level.<br>
-                            Gaining hands-on experience through projects and continuous practice.<br>
-                            I’m in my learning stage, growing every day and excited to explore new tech possibilities! ✨<br>
-                        </p>
-
-
-                        <h2 class="section-title2">Skills: </h2>
-                        <div class="skills-grid">
-
-                        
-                            <div class="skill-item">
-                                <i class="ph ph-code"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="ph ph-brain"></i>
-                                <span>Machine Learning</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="ph ph-shield-check"></i>
-                                <span>Cyber Security</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="ph ph-detective"></i>
-                                <span>BlueHat Hacking</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="ph ph-lightning"></i>
-                                <span>GSAP</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="ph ph-git-branch"></i>
-                                <span>Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section" data-scroll-section>
-            <div class="container">
-                <h2 class="section-title3">Featured Projects</h2>
-                
-                <div class="projects-scroll-container">
-                    <div class="projects-grid">
-                        
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="assets/images/project-1.png" alt="Project 1">
-                            </div>
-                            <div class="project-content">
-                                <h3>Gamified Learning Platform</h3>
-                                <p>Engaging platform that makes learning fun and interactive</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">HTML</span>
-                                    <span class="tech-tag">CSS3</span>
-                                    <span class="tech-tag">JS</span>
-                                    <span class="tech-tag">Firebase</span>
-                                </div>
-                                <button class="project-cta" data-url="https://github.com/codeadic09/SIH">
-                                    View Project
-                                    <i class="ph ph-arrow-up-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="assets/images/project-2.png" alt="Project 2">
-                            </div>
-                            <div class="project-content">
-                                <h3>Live Face Recognition</h3>
-                                <p>Real-time face detection and recognition system</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Open CV</span>
-                                    <span class="tech-tag">Machine Learning</span>
-                                </div>
-                                <button class="project-cta" data-url="https://github.com/codeadic09/Live-Face-Detection.git">
-                                    View Project
-                                    <i class="ph ph-arrow-up-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image" loading="lazy">
-                                <img src="assets/images/bgbg.jpg" alt="Project 3">
-                            </div>
-                            <div class="project-content">
-                                <h3>Portfolio Dashboard</h3>
-                                <p>Analytics dashboard with real-time data visualization</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">HTML</span>
-                                    <span class="tech-tag">CSS</span>
-                                    <span class="tech-tag">Java Script</span>
-                                </div>
-                                <button class="project-cta" data-url="https://github.com/codeadic09/my-website.git">
-                                    View Project
-                                    <i class="ph ph-arrow-up-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image" loading="lazy">
-                                <img src="assets/images/bgbg.jpg" alt="Project 4">
-                            </div>
-                            <div class="project-content">
-                                <h3>Building SOON</h3>
-                                <p>Stay tuned for updates on this exciting project!</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Next.js</span>
-                                    <span class="tech-tag">Stripe</span>
-                                    <span class="tech-tag">PostgreSQL</span>
-                                </div>
-                                <button class="project-cta">
-                                    View Project
-                                    <i class="ph ph-arrow-up-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image" loading="lazy">
-                                <img src="assets/images/bgbg.jpg" alt="Project 5">
-                            </div>
-                            <div class="project-content">
-                                <h3>Building SOON</h3>
-                                <p>Stay tuned for updates on this exciting project!</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">TensorFlow</span>
-                                    <span class="tech-tag">React</span>
-                                </div>
-                                <button class="project-cta" data-url="  ">
-                                    View Project
-                                    <i class="ph ph-arrow-up-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image" loading="lazy">
-                                <img src="assets/images/bgbg.jpg" alt="Project 6">
-                            </div>
-                            <div class="project-content">
-                                <h3>Building SOON</h3>
-                                <p>Stay tuned for updates on this exciting project!</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Flutter</span>
-                                    <span class="tech-tag">Firebase</span>
-                                    <span class="tech-tag">ML Kit</span>
-                                </div>
-                                <button class="project-cta" data-url="   ">
-                                    View Project
-                                    <i class="ph ph-arrow-up-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-<section class="experience-section" id="experience">
-  <div class="container">
-    <h2 class="section-title-exp">
-      Work <span class="gradient-text">Experience</span>
-    </h2>
-    <p class="section-subtitle5">My professional journey and achievements</p>
-    
-    <div class="experience-timeline">
-
-      <!-- Experience 1 -->
-      <div class="experience-item">
-        <div class="experience-icon">
-          <i class="ph ph-briefcase"></i>
         </div>
-        <div class="experience-content">
-          <div class="experience-header">
-            <div class="experience-title-wrapper">
-              <h3 class="experience-title">ML Concepts</h3>
-              <span class="experience-company">Currently Working</span>
-            </div>
-            <span class="experience-date">2025 - Present</span>
-          </div>
-          <ul class="experience-description">
-            <li>Developing machine learning models using Python and TensorFlow</li>
-            <li>Improving model accuracy by 25% through feature engineering</li>
-            <li>Collaborating with teams to integrate AI solutions</li>
-          </ul>
-          <div class="experience-tags">
-            <span class="tag">Python</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">Machine Learning</span>
-          </div>
-        </div>
-      </div>
-
-        <!-- Experience 3 -->
-      <div class="experience-item">
-        <div class="experience-icon">
-          <i class="ph ph-code"></i>
-        </div>
-        <div class="experience-content">
-          <div class="experience-header">
-            <div class="experience-title-wrapper">
-              <h3 class="experience-title">Python Developer</h3>
-              <span class="experience-company">Web Backend Services</span>
-            </div>
-            <span class="experience-date">2024 - 2025</span>
-          </div>
-          <ul class="experience-description">
-            <li>Built web applications using Firebase and Flask</li>
-            <li>Implemented user authentication and authorization</li>
-            <li>Database management and optimization</li>
-          </ul>
-          <div class="experience-tags">
-            <span class="tag">Firebase</span>
-            <span class="tag">Flask</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      <!-- Experience 2 -->
-      <div class="experience-item">
-        <div class="experience-icon">
-          <i class="ph ph-shield-check"></i>
-        </div>
-        <div class="experience-content">
-          <div class="experience-header">
-            <div class="experience-title-wrapper">
-              <h3 class="experience-title">Cybersecurity Analyst</h3>
-              <span class="experience-company">THM | Present</span>
-            </div>
-            <span class="experience-date">2024 - 2025</span>
-          </div>
-          <ul class="experience-description">
-            <li>Completed with Cyber Security Basic Channels</li>
-            <li>Working to enhance threat detection capabilities</li>
-            <li>Practicing BlueHat Hacking with Penetration Testing</li>
-          </ul>
-          <div class="experience-tags">
-            <span class="tag">Security</span>
-            <span class="tag">Penetration Testing</span>
-            <span class="tag">Network Security</span>
-          </div>
-        </div>
-      </div>
-      
-      <h2 class="section-title-exp">
-      Social <span class="gradient-text">Experience</span>
-      </h2>
-      <p class="section-subtitle6">My extracurricular activities and achievements</p>
-      
-      <!-- Experience 4 -->
-      <div class="experience-item">
-        <div class="experience-icon">
-          <i class="ph ph-users-three"></i>
-        </div>
-        <div class="experience-content">
-          <div class="experience-header">
-            <div class="experience-title-wrapper">
-              <h3 class="experience-title">Idea Pitch Competition</h3>
-              <span class="experience-company">Runner-Up – Engineer’s Enigma</span>
-            </div>
-            <span class="experience-date">2025</span>
-          </div>
-          <ul class="experience-description">
-            <li>Secured the Runner-Up position in the Idea Pitch segment of Engineer’s Enigma.</li>
-            <li>Event involved presenting an innovative idea to judges, followed by rounds of technical quizzes.</li>
-            <li>Gained valuable experience in teamwork, pitching, and quick technical thinking.</li>
-          </ul>
-          <div class="experience-tags">
-            <span class="tag">Presentation Skills</span>
-            <span class="tag">Team Collaboration</span>
-            <span class="tag">Problem Solving</span>
-            <span class="tag"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7381296504575041536/" style="color: inherit; text-decoration: none;">Visit Post</a></span>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Experience 5 -->
-      <div class="experience-item">
-        <div class="experience-icon">
-          <i class="ph ph-users-three"></i>
-        </div>
-        <div class="experience-content">
-          <div class="experience-header">
-            <div class="experience-title-wrapper">
-              <h3 class="experience-title">Drone Expo and Fire India 2025</h3>
-              <span class="experience-company">Exploring UAV Technology</span>
-            </div>
-            <span class="experience-date">2025</span>
-          </div>
-          <ul class="experience-description">
-            <li>Learned about advanced anti-drone systems and their defense applications.</li>
-            <li>Explored AI and IoT-driven innovations in modern fire safety equipment.</li>
-            <li>Gained valuable insights into current market trends and upcoming regulatory developments.</li>
-          </ul>
-          <div class="experience-tags">
-            <span class="tag">Drone Technology</span>
-            <span class="tag">UAV Systems</span>
-            <span class="tag">Startup Ideation</span>
-            <span class="tag"><a href="https://www.linkedin.com/posts/om-chaudhari-code0909_droneexpo2025-fireindia2025-uav-activity-7388867534151696384-UxhG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNEt9gBstmrsBjCkYm4iYxpqHZBFV9Iubg" style="color: inherit; text-decoration: none;">Visit Post</a></span>
-          </div>
-        </div>
-      </div>
-      
     </div>
-  </div>
+    <a href="#about" class="scroll-indicator">
+        <i class="ph-caret-down"></i>
+    </a>
 </section>
-      
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section" data-scroll-section>
-            <div class="container">
-                <h2 class="section-title4">Let's Work Together</h2>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        👋 Hi there! I'm a tech enthusiast passionate about <strong>Machine Learning</strong> 
+                        and <strong>Cyber Security</strong>. Currently strengthening my skills from intermediate 
+                        to advanced level through hands-on projects and continuous practice.
+                    </p>
+                    <p>
+                        I'm in my learning stage, growing every day and excited to explore new tech possibilities. 
+                        My focus areas include building intelligent systems, securing digital infrastructure, and 
+                        creating clean, efficient code.
+                    </p>
+                </div>
                 
-                <div class="contact-content">
-                    <form class="contact-form" id="contactForm"
-                    action="https://api.web3forms.com/submit" 
-                    method="POST">
-                    <input type="hidden" name="access_key" value="c4f1d3f3-46ee-4a24-a77e-a12d446013df">
-    <div class="form-group">
-        <input 
-            type="text" 
-            id="name"
-            name="name"
-            placeholder="Your Name" 
-            class="form-input" 
-            required
-        >
-        <span class="error-message" id="nameError"></span>
-    </div>
-    
-    <div class="form-group">
-        <input 
-            type="email" 
-            id="email"
-            name="email"
-            placeholder="Your Email" 
-            class="form-input" 
-            required
-        >
-        <span class="error-message" id="emailError"></span>
-    </div>
-    
-    <div class="form-group">
-        <textarea 
-            id="message"
-            name="message"
-            placeholder="Your Message" 
-            class="form-input form-textarea" 
-            rows="5" 
-            required
-        ></textarea>
-        <span class="error-message" id="messageError"></span>
-    </div>
-    
-    <button type="submit" class="submit-button">
-        <span class="button-text">Send Message</span>
-        <i class="ph ph-paper-plane-tilt"></i>
-    </button>
-    
-    <div class="form-status" id="formStatus"></div>
-</form>
+                <h3 class="skills-heading">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="ph-code"></i>
+                        <h4>Python</h4>
+                        <p>Core Programming</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-brain"></i>
+                        <h4>Machine Learning</h4>
+                        <p>TensorFlow, OpenCV</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-shield-check"></i>
+                        <h4>Cybersecurity</h4>
+                        <p>Penetration Testing</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-detective"></i>
+                        <h4>BlueHat Hacking</h4>
+                        <p>Ethical Hacking</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-lightning"></i>
+                        <h4>Web Development</h4>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-git-branch"></i>
+                        <h4>Version Control</h4>
+                        <p>Git & GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project-1.png" alt="Gamified Learning Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Gamified Learning Platform</h3>
+                        <p>Engaging educational platform that makes learning fun and interactive through game mechanics and real-time feedback.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="https://github.com/codeadic09/SIH" class="project-link" target="_blank">
+                            View Project <i class="ph-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project-2.png" alt="Face Detection System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Live Face Recognition</h3>
+                        <p>Real-time face detection and recognition system using computer vision and deep learning algorithms.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <a href="https://github.com/codeadic09/Live-Face-Detection.git" class="project-link" target="_blank">
+                            View Project <i class="ph-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/Project-3.png" alt="Portfolio Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Modern, responsive portfolio with smooth animations and clean design showcasing technical projects.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                        <a href="https://github.com/codeadic09/my-website.git" class="project-link" target="_blank">
+                            View Project <i class="ph-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/Project4.jpg" alt="Messenger Box">
+                    </div>
+                    <div class="project-info">
+                        <h3>Messenger Box</h3>
+                        <p></p>
+                        Real-time messaging application with chat functionality, user authentication, and instant message delivery system.
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Python Flask</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <a href="https://github.com/codeadic09/real-time-chatbox-messenger.git" class="project-link" target="_blank">
+                            View Project <i class="ph-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-grid">
+                
+                <!-- Work Experience -->
+                <div class="experience-category">
+                    <h3 class="category-title">Work Experience</h3>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h4>ML Concepts</h4>
+                                <p class="company">Currently Working</p>
+                            </div>
+                            <span class="date">2025 - Present</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Developing machine learning models using Python and TensorFlow</li>
+                            <li>Improved model accuracy by 25% through feature engineering</li>
+                            <li>Collaborating with teams to integrate AI solutions</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h4>Python Developer</h4>
+                                <p class="company">Web Backend Services</p>
+                            </div>
+                            <span class="date">2024 - 2025</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Built web applications using Firebase and Flask</li>
+                            <li>Implemented user authentication and authorization</li>
+                            <li>Database management and optimization</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h4>Cybersecurity Analyst</h4>
+                                <p class="company">THM</p>
+                            </div>
+                            <span class="date">2024 - 2025</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Completed Cyber Security Basic Channels</li>
+                            <li>Enhanced threat detection capabilities</li>
+                            <li>Practicing BlueHat Hacking with Penetration Testing</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag">Security</span>
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">Network Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="experience-category">
+                    <h3 class="category-title">Achievements</h3>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h4>Idea Pitch Competition</h4>
+                                <p class="company">Engineers Enigma - Runner-Up</p>
+                            </div>
+                            <span class="date">2025</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Secured Runner-Up position in Idea Pitch segment</li>
+                            <li>Presented innovative solutions to judges</li>
+                            <li>Gained experience in teamwork and technical thinking</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag">Presentation</span>
+                            <span class="tag">Teamwork</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h4>Drone Expo & Fire India 2025</h4>
+                                <p class="company">Technology Exploration</p>
+                            </div>
+                            <span class="date">2025</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Learned about advanced anti-drone systems</li>
+                            <li>Explored AI and IoT-driven fire safety innovations</li>
+                            <li>Gained insights into market trends and regulations</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag">Drone Tech</span>
+                            <span class="tag">UAV Systems</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="contact-description">
+                        Have a project in mind or want to discuss opportunities? 
+                        Feel free to reach out. I'm always open to new challenges and collaborations.
+                    </p>
                     
                     <div class="social-links">
-                        <a href="https://github.com/codeadic09" class="social-icon">
-                            <i class="ph ph-github-logo"></i>
+                        <a href="https://github.com/codeadic09" class="social-link" target="_blank">
+                            <i class="ph-github-logo"></i>
+                            <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/om-chaudhari-code0909/" class="social-icon">
-                            <i class="ph ph-linkedin-logo"></i>
+                        <a href="https://www.linkedin.com/in/om-chaudhari-code0909" class="social-link" target="_blank">
+                            <i class="ph-linkedin-logo"></i>
+                            <span>LinkedIn</span>
                         </a>
-                        <a href="#" class="social-icon">
-                            <i class="ph ph-twitter-logo"></i>
-                        </a>
-                        <a href="codeadic09@gmail.com" class="social-icon">
-                            <i class="ph ph-envelope-simple"></i>
+                        <a href="mailto:codeadic09@gmail.com" class="social-link">
+                            <i class="ph-envelope-simple"></i>
+                            <span>Email</span>
                         </a>
                     </div>
                 </div>
+
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c4f1d3f3-46ee-4a24-a77e-a12d446013df">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="button-text">Send Message</span>
+                        <i class="ph-paper-plane-tilt"></i>
+                    </button>
+                    
+                    <div class="form-status" id="formStatus"></div>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer" data-scroll-section>            
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
             <div class="footer-content">
-              <div class="copyright">
-                
-                <p>© 2025 Code. All rights reserved.</p>
+                <p class="copyright">© 2026 Your Name. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
-              </div>
-        </footer>
-
-    </div>
-
- 
-
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact-form.js"></script>
 
-<!-- Custom JS -->
-<script src="js/locomotive-setup.js"></script>
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/loader.js"></script>
-<!-- Before closing </body> -->
-<script src="js/contact-form.js"></script>
-
-<script>
-// Wait for Spline viewer to load, then remove logo
-const removeSpllineLogo = setInterval(() => {
-    const viewer = document.querySelector('spline-viewer');
-    if (viewer && viewer.shadowRoot) {
-        const logo = viewer.shadowRoot.querySelector('#logo');
-        if (logo) {
-            logo.remove(); // Completely removes the logo element
-            console.log("Spline logo removed!");
-            clearInterval(removeSpllineLogo);
-        }
-    }
-}, 500);
-</script>
-
-
-
-    
-
-    
 </body>
 </html>
