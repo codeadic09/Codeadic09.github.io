@@ -7,43 +7,43 @@
     :root {
         --section-padding: 80px 0;
     }
-    
+
     .hero-container {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .hero-image {
         order: -1;
         display: flex;
         justify-content: center;
     }
-    
+
     .image-wrapper {
         max-width: 300px;
     }
-    
+
     .hero-content {
         text-align: center;
     }
-    
+
     .hero-title-wrapper {
         justify-content: center;
     }
-    
+
     .hero-description {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .hero-cta {
         justify-content: center;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-    
+
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -55,123 +55,123 @@
     :root {
         --section-padding: 60px 0;
     }
-    
+
     /* Navigation */
     .nav-links {
         display: none;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .navbar {
         padding: 1rem 5%;
     }
-    
+
     /* Hero Section */
     .hero-section {
         padding: 100px 5% 60px;
     }
-    
+
     .hero-name {
         font-size: 2.5rem;
     }
-    
+
     .hero-greeting {
         font-size: 1rem;
     }
-    
+
     .hero-title-wrapper {
         flex-direction: column;
         align-items: center;
         min-height: 4rem;
     }
-    
+
     .role-container {
         min-width: 280px;
         height: 2rem;
         text-align: center;
     }
-    
+
     .role-text {
         font-size: 1rem;
         line-height: 2rem;
     }
-    
+
     .role-prefix {
         font-size: 1rem;
     }
-    
+
     .hero-description {
         font-size: 1rem;
     }
-    
+
     .image-wrapper {
         max-width: 250px;
     }
-    
+
     .hero-cta {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     /* Section Titles */
     .section-title {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    
+
     /* Skills Grid */
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    
+
     /* Projects */
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .project-card {
         max-width: 500px;
         margin: 0 auto;
     }
-    
+
     /* Experience */
     .experience-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .experience-item {
         padding: 1.5rem;
     }
-    
+
     /* Contact */
     .contact-wrapper {
         gap: 2rem;
     }
-    
+
     .contact-form {
         padding: 1.5rem;
     }
-    
+
     /* Footer */
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     /* Scroll Indicator */
     .scroll-indicator {
         bottom: 20px;
@@ -183,54 +183,54 @@
     html {
         font-size: 14px;
     }
-    
+
     .hero-name {
         font-size: 2rem;
     }
-    
+
     .hero-section {
         padding: 90px 5% 50px;
     }
-    
+
     .navbar {
         padding: 0.8rem 5%;
     }
-    
+
     .mobile-menu {
         width: 100%;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .skills-heading,
     .category-title {
         font-size: 1.5rem;
     }
-    
+
     .skill-card,
     .experience-item {
         padding: 1.25rem;
     }
-    
+
     .contact-form {
         padding: 1.25rem;
     }
-    
+
     .image-wrapper {
         max-width: 200px;
     }
-    
+
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.95rem;
     }
-    
+
     .role-container {
         min-width: 220px;
     }
-    
+
     .role-text {
         font-size: 0.9rem;
     }
@@ -242,15 +242,15 @@
         min-height: auto;
         padding: 100px 5% 50px;
     }
-    
+
     .hero-container {
         grid-template-columns: 1.5fr 1fr;
     }
-    
+
     .hero-image {
         order: 2;
     }
-    
+
     .image-wrapper {
         max-width: 250px;
     }
@@ -258,6 +258,7 @@
 
 /* ========== SMOOTH ANIMATIONS ========== */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -273,11 +274,11 @@
     .nav-links {
         display: none;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .mobile-menu {
         width: 280px;
         right: 20px;
@@ -298,7 +299,7 @@
         max-height: 300px;
         overflow-y: auto;
     }
-    
+
     .mobile-menu.active {
         max-height: 300px;
     }

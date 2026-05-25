@@ -18,7 +18,7 @@ function initPreloader() {
         setTimeout(() => {
             preloader.classList.add('hidden');
             document.body.style.overflow = 'visible';
-        }, 1000); // 1 second delay for smooth experience
+        }, 500); // 0.5 second delay for smooth experience
     });
 }
 
