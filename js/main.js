@@ -13,12 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
 // ========== PRELOADER ========== //
 function initPreloader() {
     const preloader = document.querySelector('.preloader');
-    
+    if (!preloader) return;
+
+    let dismissed = false;
+
+    const dismissPreloader = () => {
+        if (dismissed) return;
+        dismissed = true;
+        preloader.classList.add('hidden');
+        document.body.style.overflow = 'visible';
+        document.documentElement.style.overflow = 'visible';
+    };
+
+    // Keep the welcome moment short and predictable.
+    setTimeout(dismissPreloader, 250);
+
+    // If the page takes longer to load assets, don't block the UI.
+    setTimeout(dismissPreloader, 1200);
+
     window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-            document.body.style.overflow = 'visible';
-        }, 500); // 0.5 second delay for smooth experience
+        setTimeout(dismissPreloader, 120);
     });
 }
 
