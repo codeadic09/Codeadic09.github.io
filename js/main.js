@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initScrollEffects();
     initProjectLinks();
+    initAoraModal();
 });
 
 // ========== PRELOADER ========== //
@@ -43,7 +44,7 @@ function initNavigation() {
     const mobileOverlay = document.querySelector('.mobile-overlay');
     const navbar = document.querySelector('.navbar');
     const navLinks = document.querySelectorAll('.nav-links a, .mobile-link');
-    
+
     // Hamburger Menu Toggle
     if (hamburger && mobileMenu && mobileOverlay) {
         hamburger.addEventListener('click', (e) => {
@@ -53,7 +54,7 @@ function initNavigation() {
             mobileOverlay.classList.toggle('active');
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
-        
+
         // Close menu when clicking overlay
         mobileOverlay.addEventListener('click', () => {
             hamburger.classList.remove('active');
@@ -61,7 +62,7 @@ function initNavigation() {
             mobileOverlay.classList.remove('active');
             document.body.style.overflow = '';
         });
-        
+
         // Close mobile menu when clicking a link
         document.querySelectorAll('.mobile-link').forEach(link => {
             link.addEventListener('click', (e) => {
@@ -74,11 +75,11 @@ function initNavigation() {
                 }
             });
         });
-        
+
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (mobileMenu.classList.contains('active') && 
-                !mobileMenu.contains(e.target) && 
+            if (mobileMenu.classList.contains('active') &&
+                !mobileMenu.contains(e.target) &&
                 !hamburger.contains(e.target)) {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
@@ -87,7 +88,7 @@ function initNavigation() {
             }
         });
     }
-    
+
     // Navbar scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -96,18 +97,18 @@ function initNavigation() {
             navbar.classList.remove('scrolled');
         }
     });
-    
+
     // Active navigation highlight
     const sections = document.querySelectorAll('section[id]');
-    
+
     window.addEventListener('scroll', () => {
         const scrollY = window.pageYOffset;
-        
+
         sections.forEach(section => {
             const sectionHeight = section.offsetHeight;
             const sectionTop = section.offsetTop - 100;
             const sectionId = section.getAttribute('id');
-            
+
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 navLinks.forEach(link => {
                     link.classList.remove('active');
@@ -125,19 +126,19 @@ function initNavigation() {
 // ========== SMOOTH SCROLL ========== //
 function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
-    
+
     links.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                
+
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -154,7 +155,7 @@ function initScrollEffects() {
     scrollTopBtn.className = 'scroll-top';
     scrollTopBtn.innerHTML = '<i class="ph-arrow-up"></i>';
     document.body.appendChild(scrollTopBtn);
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
             scrollTopBtn.classList.add('visible');
@@ -162,14 +163,14 @@ function initScrollEffects() {
             scrollTopBtn.classList.remove('visible');
         }
     });
-    
+
     scrollTopBtn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
-    
+
     // Scroll indicator animation
     const scrollIndicator = document.querySelector('.scroll-indicator');
     if (scrollIndicator) {
@@ -190,11 +191,11 @@ function initScrollEffects() {
 // ========== PROJECT LINKS ========== //
 function initProjectLinks() {
     const projectLinks = document.querySelectorAll('.project-link');
-    
+
     projectLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const url = this.getAttribute('href');
-            
+
             // If it's a placeholder (#), prevent default
             if (!url || url === '#') {
                 e.preventDefault();
@@ -209,7 +210,7 @@ function initProjectLinks() {
 // Throttle function for performance
 function throttle(func, delay) {
     let lastCall = 0;
-    return function(...args) {
+    return function (...args) {
         const now = new Date().getTime();
         if (now - lastCall < delay) {
             return;
@@ -222,7 +223,7 @@ function throttle(func, delay) {
 // Debounce function for performance
 function debounce(func, delay) {
     let timeoutId;
-    return function(...args) {
+    return function (...args) {
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => func.apply(this, args), delay);
     };
@@ -234,3 +235,23 @@ const optimizedScroll = throttle(() => {
 }, 100);
 
 window.addEventListener('scroll', optimizedScroll);
+
+// ========== AORA MODAL ========== //
+function initAoraModal() {
+    const overlay = document.getElementById('aoraModal');
+    if (!overlay) return;
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+        }
+    });
+
+    // Close on clicking overlay background
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+        }
+    });
+}
